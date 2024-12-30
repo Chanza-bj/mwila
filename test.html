@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mwila Chriseddy Bwanga - Governance & Youth Development Consultant</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Mwila Chriseddy Bwanga - Governance & Youth Development Consultant, Transformational Speaker, and Author">
+    <meta name="keywords" content="governance, youth development, consultant, Africa, leadership">
+    <link rel="favicon" href="favicon.ico">
+    <style>
+        /* Add CSS variables for consistent theming */
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #34495e;
+            --accent-color: #3498db;
+            --text-color: #333;
+            --light-bg: #f8f9fa;
+            --spacing-unit: 1rem;
+            --border-radius: 8px;
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            position: relative;
+            margin: 0;
+            padding: 0;
+        }
+        .about-content {
+        display: grid;
+        grid-template-columns: 300px 1fr;
+        gap: 2rem;
+        align-items: start;
+        margin-bottom: 2rem;
+    }
+
+    .profile-image img {
+        width: 100%;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .gallery-item {
+        background: #fff;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .gallery-item img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    @media (max-width: 768px) {
+        .about-content {
+            grid-template-columns: 1fr;
+        }
+    }
+
+
+        .hero {
+            position: relative;
+            min-height: calc(100vh - 60px);
+            margin-top: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(rgba(44, 62, 80, 0.4), rgba(44, 62, 80, 0.5)), 
+                        url('mwila.jpg') left 15%/cover;
+            padding: 4rem 2rem;
+            text-align: center;
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            padding-top: 2rem;
+            padding: 2rem;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero-subtitle {
+            font-size: 1.5rem;
+            color: white;
+            opacity: 0.9;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .section {
+            margin-bottom: 4rem;
+        }
+
+        .section-title {
+            color: var(--primary-color);
+            margin-bottom: 2rem;
+            text-align: center;
+            font-size: 2rem;
+            text-transform: uppercase;
+        }
+
+        .experience-card {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+
+        .experience-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .experience-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+
+        .image-caption {
+            font-style: italic;
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        .quote {
+            font-style: italic;
+            color: var(--primary-color);
+            text-align: center;
+            font-size: 1.2rem;
+            margin: 2rem 0;
+            padding: 1rem;
+            border-left: 4px solid var(--accent-color);
+        }
+
+        .publications {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .book-card {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .contact {
+            text-align: center;
+            background: var(--secondary-color);
+            color: white;
+            padding: 3rem;
+            margin-top: 4rem;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .container {
+                padding: 1rem;
+            }
+            .experience-card {
+                padding: 1.5rem;
+            }
+        }
+
+        /* Add these new styles */
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: var(--primary-color);
+        padding: 1rem 0;
+        z-index: 1000;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        height: 60px;
+    }
+
+    .nav-links {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        list-style: none;
+    }
+
+    .nav-links a {
+        color: white;
+        text-decoration: none;
+        font-size: 1rem;
+        transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+        color: var(--accent-color);
+    }
+      /* Adjust other elements to account for fixed navbar */
+      body {
+        padding-top: 0;
+    }
+
+    /* Add smooth scrolling to the whole document */
+    html {
+        scroll-behavior: smooth;
+    }
+
+    /* Adjust section padding to account for fixed navbar */
+    .section {
+        padding-top: 70px;
+        margin-top: -70px;
+    }
+
+    @media (max-width: 768px) {
+        .nav-links {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+        }
+    }
+
+      /* ... existing styles ... */
+        
+        /* Add these new styles */
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .contact-link {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-link:hover {
+            color: var(--accent-color);
+        }
+
+        .contact-link i {
+            font-size: 1.5rem;
+        }
+    /* Updated contact styles */
+    .contact {
+        text-align: center;
+        background: var(--secondary-color);
+        color: white;
+        padding: 4rem 2rem;
+        margin-top: 4rem;
+    }
+
+    .contact-intro {
+        max-width: 600px;
+        margin: 1rem auto 2rem;
+        font-size: 1.1rem;
+        opacity: 0.9;
+    }
+
+    .contact-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 4rem;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .contact-group {
+        flex: 1;
+        min-width: 300px;
+    }
+
+    .contact-group h3 {
+        margin-bottom: 1.5rem;
+        font-size: 1.3rem;
+        color: var(--accent-color);
+    }
+
+    .contact-links {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .contact-link {
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+        color: white;
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        border-radius: 50px;
+        background: rgba(255, 255, 255, 0.1);
+        transition: all 0.3s ease;
+    }
+
+    .contact-link:hover {
+        background: var(--accent-color);
+        transform: translateY(-2px);
+    }
+
+    .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    .social-link {
+        color: white;
+        text-decoration: none;
+        font-size: 1.8rem;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.1);
+        transition: all 0.3s ease;
+    }
+
+    .social-link:hover {
+        background: var(--accent-color);
+        transform: translateY(-2px);
+    }
+
+    @media (max-width: 768px) {
+        .contact-container {
+            gap: 2rem;
+        }
+        
+        .contact-group {
+            min-width: 100%;
+        }
+    }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+       
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#leadership">Leadership</a></li>
+            <li><a href="#awards">Awards</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Mwila Chriseddy Bwanga</h1>
+            <p class="hero-subtitle">Governance and Youth Development Consultant | Transformational Speaker | Author</p>
+            
+        </div>
+    </section>
+
+    <div class="container">
+        <section class="section" id="experience">
+            <h2 class="section-title">Professional Experience</h2>
+            
+            <div class="experience-card">
+                <h3>Governance & Youth Development Consultant</h3>
+                <p>For the past four years, Mwila has served as a Governance and Youth Development Consultant. In this capacity, he has collaborated with government officials, diplomatic dignitaries, international organisations, and regional bodies to drive impactful initiatives. His expertise has supported esteemed institutions such as the SADC Parliamentary Forum, Community of Democracies, COMESA Secretariat, Zambia's Ministry of Youth, Sport, and Arts, the Southern African Youth Forum, YouLead Afrika in East Africa, the Center for Young Leaders in Africa, Friedrich-Ebert-Stiftung Foundation (Zambian office), the U.S. Embassy in Zambia, and the Swedish Embassy in Zambia, among others.</p>
+                <p>Mwila's work through BeRelevant Afrika exemplifies a commitment to fostering credible leadership and sustainable youth development across the region and beyond.</p>
+                
+                <div class="image-gallery">
+                    <div>
+                        <p class="image-caption">At the US. Embassy Zambia after being engaged to train Zambian youth in Democratic Governance and Political Leadership.</p>
+                    </div>
+                    <div>
+                        <p class="image-caption">After successfully launching one of Zambia's most effective youth leadership academy's the BeRelevant Leadership Academy</p>
+                    </div>
+                    <div>
+                        <p class="image-caption">Engaged to interview a conversation on African Politics with former President of Tanzania JAKAYA KIKWETE in Arusha, Tanzania</p>
+                    </div>
+                    <div>
+                        <p class="image-caption">Training Youth in Malawi, Lilongwe on Regional Integration and the role of Governance in uniting Africa economically.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="experience-card">
+                <h3>Transformational Speaker - Local and International</h3>
+                <p>Mwila is a prolific transformational speaker who has captivated both local and international audiences with his insightful perspectives on critical topics such as governance and democracy, foreign policy and international relations, youth development, leadership, nation-building, and igniting a sense of patriotism in shaping Africa's future.</p>
+                <p>He has delivered thought-provoking speeches on notable platforms, including:</p>
+                <ul>
+                    <li>The 1st Summit for Democracy in 2021, sharing the stage with U.S. Secretary of State Antony Blinken</li>
+                    <li>The Governing Council of the Community of Democracies in Central London, United Kingdom</li>
+                    <li>The 2nd Summit for Democracy in Seoul, South Korea</li>
+                    <li>The Countering Corruption Summit in Cape Town (2023)</li>
+                    <li>The Employability Summit (2024) in Nairobi, Kenya</li>
+                </ul>
+            </div>
+
+            <div class="experience-card">
+                <h3>Communications & Events Management Specialist (2021 - Present)</h3>
+                <p>As a Communications and Events Management Consultant, Mwila has leveraged his expertise to help organizations develop effective communication and public relations strategies that enhance brand visibility and establish a global reputation. This work is executed through Glood Innovations, a company he co-founded that specializes in delivering impactful media, events management and branding solutions.</p>
+                <p>Through Glood Innovations, Mwila has spearheaded communications consulting for leading entities such as:</p>
+                <ul>
+                    <li>Africa Philanthropy Network</li>
+                    <li>D'lite Zambia</li>
+                    <li>Willowton Group</li>
+                    <li>Gourock Zambia Limited</li>
+                    <li>Revin Zambia Limited</li>
+                    <li>SADC Parliamentary Forum</li>
+                    <li>National Youth Development Council</li>
+                    <li>Zambia's Ministry of Youth, Sport, and Arts</li>
+                    <li>Duke of Edinburgh International Award</li>
+                </ul>
+            </div>
+            <div class="experience-card">
+                <h3>BeRelevant Afrika - Founder (2020 - Present)</h3>
+                <p>Mwila is the Founder of BeRelevant Afrika, a non-profit leadership development institute dedicated to shaping the leaders Africa needs to achieve the continent's aspirations. Under his leadership, the institute drives a transformative vision to equip individuals with 21st-century leadership skills and knowledge, foster dynamic platforms for engagement, and contribute to thought leadership through evidence-based research.</p>
+                
+                <div class="image-gallery">
+                    <div>
+                        <p class="image-caption">The BeRelevant Leadership Academy is our program of youth leadership development, since its inception in August 2022 the Academy has trained 1,700 young leaders. The Academy capacitates young leaders with the skills they need for the future they envision.</p>
+                    </div>
+                    <div>
+                        <p class="image-caption">In partnership with the Japanese Embassy, we donated 300+ desks to 10 different schools in Chingola District in 2024. The official handover of the desks was done by Hon. Chipoka Mulenga the Minister of Commerce, Trade and Industry and the Japanese Ambassador to Zambia Mr. TAKEUCHI Kazuyuk</p>
+                    </div>
+                    <div>
+                        <p class="image-caption">The Teens Leadership Program is BeRelevant's initiative to empower Zambian Teenagers with the necessary skills to be outstanding leaders in school, social life and in their career development endeavour. The program has so far trained 50 Zambian Teens.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="leadership">
+            <h2 class="section-title">Leadership Experience</h2>
+            
+            <div class="experience-card">
+                <h3>CoD YouthLead for Zambia - Community of Democracy</h3>
+                <p>The CoD YouthLeads is an informal, voluntary initiative comprising young pro-democracy advocates who provide strategic advice to the Member States of the Community of Democracies. Their mission is to enhance youth engagement and participation in democratic processes worldwide. As part of this team, Mwila offers actionable recommendations on governance and international affairs to the Governing Council, addressing critical issues affecting democracy.</p>
+                <p>In 2023, during the Governing Council meeting held in London, Mwila represented the YouthLeads and delivered a powerful keynote address as the Youth Speaker, showcasing the vital role of young voices in shaping democratic practices globally.</p>
+                
+                <div class="image-gallery">
+                    <div>
+                        <p class="image-caption">UNITED KINGDOM, LONDON MISSION: In 2023 Mwila was on an International Relations call of Duty as CoD YouthLead from Zambia to speak on the future of democracy and how Africa is positioning itself in strengthening the very fabric of democracy.</p>
+                    </div>
+                    <div>
+                        <p class="image-caption">POLAND, WARSAW MISSION: In 2023, Mwila had an engagement mission in Warsaw, Poland and the cause of the meeting was to discuss on key global issues such as the Russia-Ukraine War, development of the Youth Democracy Network and Role of youth in electoral processes.</p>
+                    </div>
+                    <div>
+                        <p class="image-caption">SOUTH KOREA, SEOUL MISSION: In 2024, Mwila attended the 3RD SUMMIT FOR DEMOCRACY in Seoul as one of his missions, during the visit Mwila had the opportunity to engage with key democracy advocates around the world, and gave a speech on Youth Electoral Participation.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="experience-card">
+                <h3>Commonwealth National Youth Representative for Zambia (2021 – 2023)</h3>
+                <p>Mwila was competitively selected by the National Youth Development Council of Zambia to serve as the National Youth Delegate, representing all Zambian youths in the Commonwealth region. In this esteemed capacity, he officially represented the country at the 2022 Commonwealth Youth Forum and the Commonwealth Heads of Government Summit held in Kigali, Rwanda.</p>
+            </div>
+
+            <div class="experience-card">
+                <h3>UNILUS Student Union President (2016 – 2017)</h3>
+                <p>While pursuing his undergraduate degree in Politics and International Relations, Mwila served as President of the University of Lusaka Student Union, where his leadership focused on driving meaningful change. He championed the reduction of student fees, established systems to ensure the full inclusion of students living with disabilities, and actively participated in programs addressing mental health challenges and drug addiction among students. Following his tenure, Mwila's outstanding leadership was formally recognized by the university management.</p>
+            </div>
+        </section>
+
+        <section class="section" id="awards">
+            <h2 class="section-title">Recognition & Awards</h2>
+            
+            <div class="experience-card">
+                <h3>Governance and Civic Leadership Award (2020)</h3>
+                <p>Mwila was honored with the Governance and Civic Leadership Award by the Ministry of Youth, Sports, and Child Development, in partnership with the National Youth Development Council. This recognition celebrated his unwavering dedication to youth development, his selfless contributions to his community, and his distinguished representation of Zambia on national and international platforms. Additionally, Mwila was named among Zambia's Top 35 Youth Leaders Under 35, further cementing his status as a transformative leader.</p>
+            </div>
+
+            <div class="experience-card">
+                <h3>Best Non-Fiction Author of the Year 2018</h3>
+                <p>Mwila received the prestigious Best Non-Fiction Award of the Year from the CDI National Book Awards for his impactful Pan-African book, I AM AFRICA. This thought-provoking work advocates for Africa's transformation by championing key themes such as patriotism, intra-African trade, silencing the guns, cultural identity, and industrial revolution. The book stands as a rallying call for a united and progressive Africa.</p>
+            </div>
+        </section>
+
+        <section class="section" id="publications">
+            <h2 class="section-title">Published Works</h2>
+            <p>Mwila is the celebrated author of three best-selling books that boldly challenge the status quo of development, inspiring readers to envision and create a society that reflects the values of equity, progress, and unity for both the nation and the continent.</p>
+            
+            <div class="publications">
+                <div class="book-card">
+                    <h3>I AM AFRICA (2018)</h3>
+                    <p>Officially launched at the University of Lusaka with Guest of Honor Dr Vernon Johnson Mwaanga, the Freedom Fighter. The book has sold more than 1,000 copies nationwide and across the region.</p>
+                </div>
+                <div class="book-card">
+                    <h3>DE-CORONA-ZATION (2020)</h3>
+                    <p>Published during COVID-19 Pandemic, providing researched suggestions and ideas on how nations can build back better in Post-COVID-19. The book received national recognition as a key publication at such a pressing time.</p>
+                </div>
+                <div class="book-card">
+                    <h3>GIANTS OF LIBERATION (2023)</h3>
+                    <p>Officially launched at Mulungushi Conference Center by the former First Lady of Zambia Mrs. Esther Lungu. The first Zambian book that profiles the galant leaders that fought for Zambia's liberation, written for future generations.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="container">
+        <section class="section" id="about">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="profile-image">
+                    <!-- Add your profile image here -->
+                    <img src="E:\images\mwila.jpg" alt="Mwila Chriseddy Bwanga">
+                </div>
+                <div class="about-text">
+                    <p>MWILA
+                         is a seasoned expert in Governance and International Affairs, Communications, and
+                        Youth Development, with over five years of experience advancing democratic governance,
+                        fostering international relations, championing youth leadership, and building sustainable,
+                        effective communication systems for institutions. A prolific speaker, Mwila has addressed
+                        both local and international audiences, and is a best-selling author of five books. 
+                       MWILA
+                        CHRISEDDY BWANGA
+                        His contributions to governance and leadership were
+                        recognized with the prestigious Governance and Civic
+                        Leadership Award from the Government of Zambia
+                        during the 2020 National Youth Awards. Mwila holds a
+                        degree in Politics and International Relations from the
+                        University of Lusaka and currently serves as the
+                        Executive Director of BeRelevant Afrika and Chief
+                        Creative Officer at Glood Innovations Limited. Mwila's
+                        leadership journey reflects a steadfast commitment to
+                        service and excellence.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- For the image galleries, update the structure like this: -->
+        <div class="image-gallery">
+            <div class="gallery-item">
+                <!-- Add actual images to each gallery item -->
+                <img src="path/to/us-embassy-image.jpg" alt="US Embassy Training">
+                <p class="image-caption">At the US. Embassy Zambia after being engaged to train Zambian youth in Democratic Governance and Political Leadership.</p>
+            </div>
+            <!-- Repeat for other images -->
+        </div>
+    </div>
+
+    <section class="contact" id="contact">
+        <div class="contact-container">
+            <!-- Professional Contact -->
+            <div class="contact-group">
+                <h3>Professional Inquiries</h3>
+                <div class="contact-links">
+                    <a href="mailto:mwila@gloodinnovations.com" class="contact-link">
+                        <i class="fas fa-envelope"></i>
+                        <span>mwila@gloodinnovations.com</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Social Media -->
+            <div class="contact-group">
+                <h3>Connect on Social Media</h3>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/MwilaChrisOfficial" class="social-link" title="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/your-profile" class="social-link" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://twitter.com/your-profile" class="social-link" title="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com/your-profile" class="social-link" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
